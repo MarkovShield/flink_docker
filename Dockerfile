@@ -21,10 +21,10 @@ FROM java:8-jre-alpine
 MAINTAINER Philip Schmid
 
 # Install requirements
-RUN apk add --no-cache bash snappy
+RUN apk add --no-cache bash snappy tar gzip
 
 # Configure Flink version
-ENV FLINK_VERSION=1.2.0
+ENV FLINK_VERSION=1.2.1
 ENV HADOOP_VERSION=27
 ENV SCALA_VERSION=2.11
 
